@@ -3,7 +3,7 @@ import retriveNews from "@salesforce/apex/newsController.retriveNews";
 export default class NewsComponent extends LightningElement {
     @track result = []
     @track selectedNews={};
-    @track isModalOpen = false;
+    isModalOpen = false;
     get modalClass(){
         return `slds-modal ${this.isModalOpen ? "slds-fade-in-open" :""}`
     }

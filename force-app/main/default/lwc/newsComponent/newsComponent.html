@@ -1,5 +1,6 @@
+<!-- sldsValidatorIgnore -->
 <template>
-    <div class="container">
+    <div class="slds-list_horizontal container">
       <div class="slds-grid slds-gutters slds-wrap justify-center">
         <template for:each={result} for:item="item">
           <div class="card" key={item.id}>
@@ -42,8 +43,8 @@
             {selectedNews.title}
           </h2>
         </header>
-        <div
-          class="slds-modal__content slds-p-around_medium"
+        <divslds-var-p-around_medium
+          class="slds-modal__content slds-var-p-around_medium"
           id="modal-content-id-1"
         >
           <img src={selectedNews.urlToImage} />
