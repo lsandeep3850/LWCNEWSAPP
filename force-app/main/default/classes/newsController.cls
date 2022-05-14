@@ -4,7 +4,7 @@ public with sharing class newsController {
         HttpRequest httpRequest = new HttpRequest();
         httpRequest.setEndpoint('http://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=e47ff821606543309cfa4063146292d7');
         httpRequest.setMethod('GET');
-      //  https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=API_KEY e47ff821606543309cfa4063146292d7
+      ////  https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=API_KEY e47ff821606543309cfa4063146292d7
         Map<String, Object> newsJsonData = new Map<String, Object>();
         String strResponse = null;
 
