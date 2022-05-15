@@ -12,6 +12,7 @@ public with sharing class newsController {
             Http http = new Http();
             HttpResponse httpResponse = http.send(httpRequest);
             if(httpResponse.getStatusCode() == 200){
+                System.debug('Hi Sandeep');
                 strResponse = httpResponse.getBody();
             } else {
                 throw new CalloutException(httpResponse.getBody());
